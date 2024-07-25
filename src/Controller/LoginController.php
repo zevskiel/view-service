@@ -12,6 +12,7 @@ use Psr\Log\LoggerInterface;
 
 class LoginController extends AbstractController
 {
+    //composer require symfony/runtime
     //php bin/console cache:clear   
     //symfony server:start
     //curl -X POST -d "username=testuser&password=testpass" http://localhost:8000/login
