@@ -1,0 +1,8 @@
+project:
+   path: /projects
+   controller: App\Controller\ProjectController::getProjects
+
+login:
+   path: /login
+   controller: App\Controller\LoginController::login
+
