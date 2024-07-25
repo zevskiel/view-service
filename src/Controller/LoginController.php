@@ -29,8 +29,10 @@ class LoginController extends AbstractController
      */
     public function login(Request $request): Response
     {
-        $username = $request->request->get('username');
-        $password = $request->request->get('password');
+        $data = json_decode($request->getContent(), true);
+
+        $username = $data['username'];
+        $password = $data['password'];
 
         if (empty($username) || empty($password)) {
             return new Response('Username and password are required', Response::HTTP_BAD_REQUEST);
