@@ -46,7 +46,7 @@ class LoginController extends AbstractController
         }
 
         // Assuming you have some kind of token generation or session management
-        // For simplicity, we'll just return a success message
-        return new Response('Login successful', Response::HTTP_OK);
+        // For simplicity, we'll just return a success message with the user ID
+        return new Response($user->getId(), Response::HTTP_OK);
     }
 }

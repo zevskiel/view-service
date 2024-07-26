@@ -22,6 +22,9 @@ class Projects
     #[ORM\Column(name: "`ProjectStage`", length: 500)]
     private $ProjectStage = null;
 
+    #[ORM\Column(name: "`ProjectCategory`", length: 500)]
+    private $ProjectCategory = null;
+
     #[ORM\Column(name: "`ProjectStartDate`", type: Types::STRING)]
     private $ProjectStartDate = null;
 
@@ -75,6 +78,18 @@ class Projects
     public function setProjectStage(string $ProjectStage)
     {
         $this->ProjectStage = $ProjectStage;
+
+        return $this;
+    }
+
+    public function getProjectCategory()
+    {
+        return $this->ProjectCategory;
+    }
+
+    public function setProjectCategory(string $ProjectCategory)
+    {
+        $this->ProjectCategory = $ProjectCategory;
 
         return $this;
     }
