@@ -4,7 +4,7 @@ This is the README file for the PHP Symfony project.
 
 ## Project Overview
 
-The project is a construction project management system built using the Symfony framework. It aims to streamline the management of construction projects, including tasks, timelines, resources, and budgets.
+The project is a construction project management system built using the Symfony framework. It aims to view list of the management of construction projects.
 
 ## Installation
 
